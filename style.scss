@@ -1,0 +1,56 @@
+// 1- Variables
+$primary-font: 'Gill Sans',
+'Gill Sans MT',
+Calibri,
+'Trebuchet MS',
+sans-serif;
+$primary-color: rgb(0, 30, 65);
+$while-col: white;
+$black-col:black;
+// 2- Mixin
+@mixin flex-property {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+html {
+    font-size: 15px;
+}
+
+// since so many inner classes, target it individually
+.inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    // padding: 5% 5%;
+    padding: 30px;
+}
+
+// btn 
+.more {
+    width: 100px;
+    height: 45px;
+    border: 0;
+    background-color: $primary-color;
+    color: $while-col;
+    font-family: $primary-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.flex-box {
+    @include flex-property();
+}
+
+@import "header";
+@import "info";
+@import "testimonial";
+@import "imageGallery";
+@import "footer";

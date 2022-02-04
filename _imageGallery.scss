@@ -1,0 +1,34 @@
+// image gallery
+.image-gallery {
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: $primary-color;
+    }
+    h5 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+    .left,
+    .right {
+        width: 47%;
+    }
+    img {
+        width: 100%;
+        height: 50%;
+    }
+    h3 {
+        margin: 2rem 0;
+        font-weight: 200;
+        color: $primary-color;
+    }
+    p {
+        margin-bottom: 2rem;
+        line-height: 1.2rem;
+        color: rgb(83, 81, 81);
+    }
+}
